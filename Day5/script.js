@@ -35,16 +35,16 @@
 // else console.log("Given number is not a prime no");
 
 // There is  another approach to check if a number is prime or not
-function checkPrime(num4) {
-  if (num4 < 1) return false;
-  if (num4 == 2) return true;
-  if (num4 % 2 == 0) return false;
-  for (let s = 3; s <= Math.floor(Math.sqrt(num4)); q += 2) {
-    if (num4 % s == 0) return false;
-  }
-  return true;
-}
-let num3 = Number(prompt("Enter a number"));
-let isPrime1 = checkPrime();
-if (isPrime1) console.log("prime no");
-else console.log("not a prime no");
+// function checkPrime(num4) {
+//   if (num4 < 1) return false;
+//   if (num4 == 2) return true;
+//   if (num4 % 2 == 0) return false;
+//   for (let s = 3; s <= Math.floor(Math.sqrt(num4)); q += 2) {
+//     if (num4 % s == 0) return false;
+//   }
+//   return true;
+// }
+// let num3 = Number(prompt("Enter a number"));
+// let isPrime1 = checkPrime();
+// if (isPrime1) console.log("prime no");
+// else console.log("not a prime no");

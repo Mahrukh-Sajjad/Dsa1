@@ -118,13 +118,13 @@
 // console.log(maxdigit);
 
 // Find the sum of even digits in a given no
-let n8 = Number(prompt("Enter a number"));
-let eSum = 0;
-while (n8 !== 0) {
-  let r = n8 % 10;
-  if (r % 2 == 0) {
-    eSum = eSum + r;
-  }
-  n8 = Math.floor(n8 / 10);
-}
-console.log(eSum);
+// let n8 = Number(prompt("Enter a number"));
+// let eSum = 0;
+// while (n8 !== 0) {
+//   let r = n8 % 10;
+//   if (r % 2 == 0) {
+//     eSum = eSum + r;
+//   }
+//   n8 = Math.floor(n8 / 10);
+// }
+// console.log(eSum);
