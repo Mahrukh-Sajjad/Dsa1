@@ -54,3 +54,25 @@
 //   i++;
 // }
 // console.log(a);
+
+// Left rotation of elements by 1
+// let a = [1, 2, 3, 4, 5];
+// let temp = a[0],
+//   i = 0;
+// while (i < a.length) {
+//   a[i] = a[i + 1];
+//   i++;
+// }
+// a[a.length - 1] = temp;
+// console.log(a);
+
+// Right rotation of elements by 1
+let a = [1, 2, 3, 4, 5];
+let i = a.length - 1,
+  temp = a[a.length - 1];
+while (i > 0) {
+  a[i] = a[i - 1];
+  i--;
+}
+a[0] = temp;
+console.log(a);
