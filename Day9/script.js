@@ -1,4 +1,4 @@
-// Check whether this no is strong or not
+ // Check whether this no is strong or not
 let prompt = require("prompt-sync")();
 // // let n = Number(prompt("Enter a number"));
 // // let ans = 0;
