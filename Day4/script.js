@@ -41,7 +41,7 @@ do {
       console.log("result" + num1 * num2);
       break;
     case "/":
-      if (num2 !== 0) console.log("result" + (num1 + num2));
+      if (num2 !== 0) console.log("result" + num1 / num2);
       else console.log("Plz enter a valid no");
       break;
     default:
