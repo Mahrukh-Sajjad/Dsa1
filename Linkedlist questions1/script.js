@@ -93,3 +93,53 @@ var deleteDuplicates = function (head) {
   }
   return head;
 };
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+//  */
+// High-Level Algorithm: Detect Cycle in a Linked List
+// Handle edge cases:
+
+// If the list is empty (head == null) or has only one node (head.next == null), return false. A cycle is not possible.
+
+// Initialize two pointers:
+
+// slow and fast, both starting at the head of the list.
+
+// Traverse the list using the two pointers:
+
+// Move slow one step at a time (slow = slow.next).
+
+// Move fast two steps at a time (fast = fast.next.next).
+
+// Check for cycle:
+
+// If at any point slow and fast meet, a cycle exists → return true.
+
+// If the loop ends (i.e., fast reaches the end of the list):
+
+// That means no cycle → return false.
+
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
+var hasCycle = function(head) {
+    if(head==null || head.next==null) return false;
+    let fast = head , slow=head;
+     while(fast!=null && fast.next!=null){
+        fast = fast.next.next;
+        slow= slow.next;
+        if (fast==slow) return true
+     }
+     return false;
+
+    
+};
+
+
+
